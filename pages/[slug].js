@@ -42,7 +42,7 @@ export default function SeoPage({ page }) {
 
       <EditorialHeader />
 
-      <main className="container" style={{ paddingTop: '2rem', paddingBottom: '4rem' }}>
+      <main style={{ maxWidth: '860px', margin: '0 auto', padding: '48px 24px 80px', background: '#000000', color: '#ffffff', minHeight: '100vh' }}>
         {page.breadcrumb?.length > 0 && <Breadcrumb items={page.breadcrumb} />}
 
         <h1 style={{ marginTop: '1.5rem' }}>{page.h1}</h1>

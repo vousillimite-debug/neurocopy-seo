@@ -12,10 +12,8 @@ export default function CtaFinal() {
         textAlign: 'center',
       }}
     >
-      <h2 style={{ color: '#ffffff', marginTop: 0, lineHeight: '1.3' }}>
-        Ton copy a l'air bien.<br />
-        Le cerveau de tes prospects<br />
-        a décidé autrement.
+      <h2 style={{ fontSize: '26px', fontWeight: 700, marginBottom: '12px', lineHeight: 1.3 }}>
+        Ton copy a l'air bien.<br />Le cerveau de tes prospects a décidé autrement.
       </h2>
       <p style={{ color: '#a29bfe', marginBottom: '1.5rem' }}>
         30 secondes pour savoir exactement<br />
