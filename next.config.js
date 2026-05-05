@@ -9,3 +9,4 @@ const nextConfig = {
 
 module.exports = nextConfig
 // env vars fixed - redeploy 1777992488
+// grant anon fixed - redeploy 1777992812
