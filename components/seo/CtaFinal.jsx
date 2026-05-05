@@ -12,14 +12,17 @@ export default function CtaFinal() {
         textAlign: 'center',
       }}
     >
-      <h2 style={{ color: '#ffffff', marginTop: 0 }}>
-        Prêt à booster votre référencement ?
+      <h2 style={{ color: '#ffffff', marginTop: 0, lineHeight: '1.3' }}>
+        Ton copy a l'air bien.<br />
+        Le cerveau de tes prospects<br />
+        a décidé autrement.
       </h2>
       <p style={{ color: '#a29bfe', marginBottom: '1.5rem' }}>
-        NeuroCopy génère du contenu SEO de qualité, en quelques secondes.
+        30 secondes pour savoir exactement<br />
+        pourquoi — et comment corriger.
       </p>
       <Link
-        href="/"
+        href="/signup"
         style={{
           display: 'inline-block',
           background: '#6c63ff',
@@ -28,10 +31,14 @@ export default function CtaFinal() {
           borderRadius: '8px',
           fontWeight: 700,
           fontSize: '1rem',
+          textDecoration: 'none',
         }}
       >
         Commencer gratuitement →
       </Link>
+      <p style={{ color: '#6c757d', fontSize: '0.8rem', marginTop: '0.75rem', marginBottom: 0 }}>
+        Aucune carte requise
+      </p>
     </div>
   )
 }
