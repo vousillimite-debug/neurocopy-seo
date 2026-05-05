@@ -8,3 +8,4 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// env vars fixed - redeploy 1777992488
