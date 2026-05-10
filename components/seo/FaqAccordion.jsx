@@ -13,7 +13,7 @@ export default function FaqAccordion({ items = [] }) {
         <div
           key={i}
           style={{
-            borderBottom: '1px solid #dee2e6',
+            borderBottom: '1px solid #333333',
             marginBottom: '0.5rem',
           }}
         >
@@ -26,9 +26,11 @@ export default function FaqAccordion({ items = [] }) {
               border: 'none',
               padding: '1rem 0',
               fontWeight: 600,
-              fontSize: '1rem',
+              fontSize: '16px',
               cursor: 'pointer',
-              color: '#1a1a2e',
+              color: open === i ? '#E8FF47' : '#FFFFFF',
+              WebkitTextFillColor: open === i ? '#E8FF47' : '#FFFFFF',
+              opacity: 1,
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
@@ -36,10 +38,12 @@ export default function FaqAccordion({ items = [] }) {
             aria-expanded={open === i}
           >
             <span>{item.q}</span>
-            <span style={{ color: '#6c63ff', fontSize: '1.2rem' }}>{open === i ? '−' : '+'}</span>
+            <span style={{ color: '#E8FF47', WebkitTextFillColor: '#E8FF47', fontSize: '1.2rem' }}>
+              {open === i ? '−' : '+'}
+            </span>
           </button>
           {open === i && (
-            <div style={{ padding: '0 0 1rem', color: '#495057', lineHeight: 1.7 }}>
+            <div style={{ padding: '0 0 1rem', color: '#CCCCCC', fontSize: '15px', lineHeight: 1.7 }}>
               {item.a}
             </div>
           )}
