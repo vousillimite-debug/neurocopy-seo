@@ -50,10 +50,10 @@ export default function SeoPage({ page }) {
         {page.reponse_directe && (
           <div
             style={{
-              background: '#f0eeff',
-              borderLeft: '4px solid #6c63ff',
-              padding: '1rem 1.5rem',
-              borderRadius: '0 8px 8px 0',
+              background: '#111111',
+              borderLeft: '4px solid #E8FF47',
+              borderRadius: '8px',
+              padding: '20px 24px',
               margin: '1.5rem 0',
             }}
           >
@@ -61,16 +61,16 @@ export default function SeoPage({ page }) {
           </div>
         )}
 
-        {page.intro && <p>{page.intro}</p>}
-
-        <CtaInline />
+        {page.intro && <p style={{ marginBottom: '32px' }}>{page.intro}</p>}
 
         {page.h2_sections?.map((section, i) => (
           <section key={i} style={{ marginTop: '2rem' }}>
             <h2>{section.h2}</h2>
-            <p>{section.body}</p>
+            <p style={{ fontSize: '17px', lineHeight: '1.7', marginBottom: '40px', maxWidth: '720px' }}>{section.body}</p>
           </section>
         ))}
+
+        <CtaInline />
 
         {page.faq?.length > 0 && (
           <div style={{ marginTop: '3rem' }}>
