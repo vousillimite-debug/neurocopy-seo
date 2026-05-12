@@ -66,7 +66,7 @@ export default function SeoPage({ page }) {
         {page.h2_sections?.map((section, i) => (
           <section key={i} style={{ marginTop: '2rem' }}>
             <h2>{section.h2}</h2>
-            <p style={{ fontSize: '17px', lineHeight: '1.7', marginBottom: '40px', maxWidth: '720px' }}>{section.body}</p>
+            <p style={{ fontSize: '17px', lineHeight: '1.7', marginBottom: '40px', maxWidth: '720px' }}>{section.contenu || section.body}</p>
           </section>
         ))}
 
